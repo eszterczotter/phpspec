@@ -15,8 +15,8 @@ namespace PhpSpec\Event;
 
 use PhpSpec\Loader\Node\SpecificationNode;
 use PhpSpec\Loader\Suite;
-use Symfony\Component\EventDispatcher\Event;
 use PhpSpec\Loader\Node\ExampleNode;
+use Symfony\Contracts\EventDispatcher\Event;
 
 /**
  * Class ExampleEvent holds the information about the example event

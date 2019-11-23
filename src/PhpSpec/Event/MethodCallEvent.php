@@ -16,7 +16,7 @@ namespace PhpSpec\Event;
 use PhpSpec\Loader\Node\ExampleNode;
 use PhpSpec\Loader\Node\SpecificationNode;
 use PhpSpec\Loader\Suite;
-use Symfony\Component\EventDispatcher\Event;
+use Symfony\Contracts\EventDispatcher\Event;
 
 /**
  * Class MethodCallEvent holds information about method call events

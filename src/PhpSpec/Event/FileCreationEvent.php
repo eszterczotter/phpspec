@@ -13,7 +13,7 @@
 
 namespace PhpSpec\Event;
 
-use Symfony\Component\EventDispatcher\Event;
+use Symfony\Contracts\EventDispatcher\Event;
 
 final class FileCreationEvent extends Event implements PhpSpecEvent
 {

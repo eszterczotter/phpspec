@@ -73,7 +73,6 @@ class ExampleRunner
     {
         $startTime = microtime(true);
         $this->dispatcher->dispatch(
-            'beforeExample',
             new ExampleEvent($example)
         );
 
@@ -111,7 +110,6 @@ class ExampleRunner
 
         $runTime = microtime(true) - $startTime;
         $this->dispatcher->dispatch(
-            'afterExample',
             $event = new ExampleEvent($example, $runTime, $status, $exception)
         );
 

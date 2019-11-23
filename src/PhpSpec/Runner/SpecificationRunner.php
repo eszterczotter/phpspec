@@ -46,7 +46,6 @@ class SpecificationRunner
     {
         $startTime = microtime(true);
         $this->dispatcher->dispatch(
-            'beforeSpecification',
             new Event\SpecificationEvent($specification)
         );
 
@@ -58,7 +57,6 @@ class SpecificationRunner
             }
         } finally {
             $this->dispatcher->dispatch(
-                'afterSpecification',
                 new Event\SpecificationEvent($specification, microtime(true) - $startTime, $result)
             );
         }

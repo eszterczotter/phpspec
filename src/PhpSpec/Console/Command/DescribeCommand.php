@@ -78,6 +78,8 @@ EOF
         $resource = $container->get('locator.resource_manager')->createResource($classname);
 
         $container->get('code_generator')->generate($resource, 'specification');
+
+        return 0;
     }
 
     /**

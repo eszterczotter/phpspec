@@ -14,7 +14,7 @@
 namespace PhpSpec\Event;
 
 use PhpSpec\Loader\Suite;
-use Symfony\Component\EventDispatcher\Event;
+use Symfony\Contracts\EventDispatcher\Event;
 
 /**
  * Class SuiteEvent holds information about the suite event

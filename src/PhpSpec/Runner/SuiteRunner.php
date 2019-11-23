@@ -46,7 +46,7 @@ class SuiteRunner
      */
     public function run(Suite $suite): int
     {
-        $this->dispatcher->dispatch('beforeSuite', new SuiteEvent($suite));
+        $this->dispatcher->dispatch(new SuiteEvent($suite));
 
         $result = 0;
         $startTime = microtime(true);
@@ -62,7 +62,6 @@ class SuiteRunner
 
         $endTime = microtime(true);
         $this->dispatcher->dispatch(
-            'afterSuite',
             new SuiteEvent($suite, $endTime-$startTime, $result)
         );
 
